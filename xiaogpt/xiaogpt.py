@@ -345,7 +345,7 @@ class MiGPT:
             print(
                 f"Running xiaogpt now, 用[green]{'/'.join(self.config.keyword)}[/]开头来提问"
             )
-            print(f"或用[green]{self.config.start_conversation}[/]开始持续对话")
+            print(f"或用[green]{self.config.start_conversation}[/]开始持续扯淡")
             while True:
                 self.polling_event.set()
                 new_record = await self.last_record.get()
@@ -387,7 +387,7 @@ class MiGPT:
                 else:
                     # waiting for xiaoai speaker done
                     await asyncio.sleep(8)
-                await self.do_tts(f"正在问{ask_name}请耐心等待")
+                await self.do_tts(f"正在问我浩哥哥")
                 try:
                     print(
                         "以下是小爱的回答: ",
